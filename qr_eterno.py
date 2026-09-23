@@ -42,7 +42,7 @@ def create_qr(content: str, output_path: str) -> None:
     qr.make(fit=True)
 
     image = qr.make_image(fill_color="black", back_color="white")
-    image.save(output_path)
+    image.save("qr-gen/"+output_path)
 
 
 def convert_to_eternal(input_path: str, output_path: str) -> str:
